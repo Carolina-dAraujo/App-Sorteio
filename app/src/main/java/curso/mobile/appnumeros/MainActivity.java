@@ -10,6 +10,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public void sortearNumero(View view){
 
         TextView texto = findViewById(R.id.numero);
-        int numero = 5;
+        int numero = new Random().nextInt(11);
         texto.setText("Número: " + numero);
 
     }
